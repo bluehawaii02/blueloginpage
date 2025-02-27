@@ -4,8 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Simple validation
-    if (username === 'Admin' && password === 'password123') {
-        alert('Login successful!');
+    if (username === 'Admin' && password === 'password123') 
         window.location.href = 'home.html'; // Redirect to welcome page;
     } else {
         document.getElementById('error-message').textContent = 'Invalid username or password';
