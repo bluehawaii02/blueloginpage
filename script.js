@@ -5,11 +5,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Simple validation
     if (username === 'Admin' && password === 'password123') {
-        window.location.href = 'home.html'; // Redirect to welcome page;
+        window.location.href = 'home.html'; // Redirect to home page directly
     } else {
         document.getElementById('error-message').textContent = 'Invalid username or password';
     }
 });
+
 document.getElementById('showPassword').addEventListener('change', function() {
     const passwordField = document.getElementById('password');
     if (this.checked) {
