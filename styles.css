@@ -6,7 +6,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: hsl(256, 41%, 7%);
+    background-image: url('backgroundphoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border: #08f708;
 }
 
 h1 {
@@ -16,38 +21,51 @@ h1 {
 
 p {
     margin-bottom: 20px;
-    color: rgb(14, 218, 31);
+    color: #0eda1f;
 }
 
 .login-container {
-    background-color: white;
+    background-color: rgba(158, 143, 143, 0.123);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #00000036;
+    width: 35%;
 }
 
 h2 {
     margin-bottom: 20px;
+    color: #08f708;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    color: #08f708;
 }
 
-input[type="text"],
+input[type="text"]  {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #08f708;
+}
+
 input[type="password"] {
-    width: 100%;
+    width: 50%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+#showpassword + label {
+    color: #08f708;
+}
 button {
     width: 100%;
     padding: 10px;
-    background-color: rgb(14, 218, 31);
+    background-color: #0eda1f;
     color: white;
     border: none;
     border-radius: 4px;
@@ -57,16 +75,48 @@ button {
 button:hover {
     background-color:rgb(14, 218, 31) ;
 }
-.exit-button {
-    width: 30%;
+.signup-container {
+    margin: top 20px;
+    text-align: centre;
+    width:35%;
+    padding: 20px;
+    text-color : #0eda1f;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.signup-button {
+    width: 35%;
     padding: 10px;
-    background-color: red;
-    color: hsl(120, 94%, 50%);
+    background-color: rgb(14, 218, 31);
+    color: white;
     border: none;
     border-radius: 2px;
     cursor: pointer;
 }
+.signup-button:hover {
+    background-color: rgb(14, 218, 31);
+}
+.exit-button {
+    width: 30%;
+    padding: 10px;
+    background-color: red;
+    color: #08f708;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.signup-success {
+    color: green;
+    margin-top: 10px;
+}
 #error-message {
     color: red;
     margin-top: 10px;
+}
+.loginh2 {
+    margin-bottom: 20px;
+    text-decoration-color: #08f708;
+}
+
 }
