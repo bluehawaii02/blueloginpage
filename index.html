@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>WELCOME TO BLUE_HAWAII</h1>
-    <p>please login to continue</p>
+    <h1>WELCOME TO BLUE_HAWAII!</h1>
+    <p>please login to continue!</p>
     <div class="login-container">
-        <h2>Login</h2>
+        <h2 class="loginh2">Login</h2>
         <form id="loginForm">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" placeholder="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="checkbox" id="showPassword" >  Show Password
+            <input type="password" id="password" name="password" placehlder="*******" required>
+            <br>
+            <input type="checkbox" id="showPassword" >
+            <label for="showPassword">Show Password</label>
             <button type="submit">LOGIN</button>
         </form>
         <p id="error-message"></p>
+    </div class="signup-container">
+        <p>Don't have an account? SIGN UP HERE</p>
+        <button id="signupbutton" class="signup-button">SIGN UP</button>
+      </div>
     </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
+  <footer>
+    
+    <p>&copy; 2025 Blue_Hawaii</p>
+  </footer>
 </body>
 </html>
